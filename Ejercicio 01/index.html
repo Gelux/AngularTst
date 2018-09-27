@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <meta http-equiv="Content-Type" conten="text/html"; charset="UTF-8" />
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <script src="js/lib/angular.min.js"></script>
+    </head>
+    <body>
+
+        <!-- <div class="container">
+            <h1>Filtros :: Filters</h1>
+            <p>
+                Filtro de texto: {{"AngulaR"}}
+                <br/>
+                Filtro de texto: {{"AngulaR" | uppercase}}
+                <br/>
+                Filtro de texto: {{"AngulaR" | lowercase}}
+                <br/>
+                Filtro  de  moneda: {{ 1337 | currency:'L.'}}
+
+
+                <br>
+
+                <p>
+                    Filtro de numero: {{13500 | number}}
+                </p>
+            </p>
+        </div> -->
+
+        <!-- <div>
+            <h2>ng-model</h2>
+            <p>
+                Nombre {{ nombre | uppercase }}:
+                <input type="text" ng-model="nombre" class="form-control" style="width: 150px">
+            </p>
+
+            <p>
+                Elija un país {{pais}}
+                <select class="form-control" ng-model="pais">
+                    <option value="1">Costa Rica</option>
+                    <option value="2">Spain</option>
+                    <option value="3">Iceland</option>
+                </select>
+            </p>
+        </div> -->
+
+        <div>
+            <h1>Angular</h1>
+            <p>
+                Nombre completo:
+                <input ng-model="nombreCompleto" type="text" class="form-control" style="width:500px">
+                <br>
+                Lugar de trabajo:
+                <input ng-model="lugarTrabajo" type="text" class="form-control" style="width: 500px">
+                <br>
+                Salario en  Dólares:
+                <input ng-model="salarioUs" type="text" class="form-control" style="width:500px">
+            </p>
+
+            <p>
+                {{nombreCompleto|uppercase}}<br>
+                {{lugarTrabajo|lowercase}}<br>
+                {{salarioUs|currency}}
+            </p>
+        </div>
+    </body>
+</html> 
