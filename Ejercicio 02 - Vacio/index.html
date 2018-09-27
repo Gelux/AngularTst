@@ -40,7 +40,7 @@
                             <br>
                             <strong>Edad:</strong>{{profesor.edad}} años
                             <br>
-                            <button class="btn btn-primary" ng-click="expression">Editar</button>
+                            <button class="btn btn-primary" ng-click="EditarProfesor()">Editar</button>
                         </div>
                     </section>
                 </div>
@@ -51,10 +51,19 @@
                     <div class="col-sm-3">
                         <section class="panel">
                             <div class="panel-body">
+                                Nombre:
+                                <input type="text" class="form-control" ng-model="editando.nombre">
+                                <br>
+                                Edad:
+                                <input type="text" class="form-control" ng-model="editando.edad">
+                                <br>
                                 Bio:
-                                <textarea class="form-control" rows="5" ng-model="profesor.bio">
+                                <textarea class="form-control" rows="5" ng-model="editando.bio"></textarea>
+                                <br>
+                                <br>
 
-                                </textarea>
+                                <Button class="btn btn-primary" ng-click="GuardarCambios()">Guardar</Button>
+                                <Button class="btn btn-danger" ng-click="expresion">Cancelar</Button>
                             </div>
                         </section> 
                     </div>

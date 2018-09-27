@@ -10,6 +10,12 @@ app.controller('prfCtrl', function($scope){
 
     }
 
+
+    $scope.GuardarCambios= function(){
+
+        angular.copy( $scope.editando, $scope.profesor );
+
+    }
 });
 
 
