@@ -5,7 +5,8 @@ var app = angular.module('universidadApp',[ ]);
 
 
 app.controller('listadoCtrl', ['$scope', function($scope){
- 
+  
+  $scope.paisSeleccionado= "";
 
   $scope.paises = [
       { id:"CRI", nombre:"COSTA RICA"},
@@ -25,10 +26,6 @@ app.controller('listadoCtrl', ['$scope', function($scope){
       { id:"USA", nombre:"ESTADOS UNIDOS"},
       { id:"EST", nombre:"ESTONIA"}
   ];
-
-  $scope.paisSeleccionado = "DOM";
-
-
 
 }]);
 
