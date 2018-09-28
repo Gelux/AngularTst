@@ -30,6 +30,26 @@
                 <li ng-repeat="nombre in listado">{{nombre}}</li>
             </ul>
 
+            <table class="table table-striped">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Clase</th>
+                </tr>
+                <tr ng-repeat="profesor in listadoProfesores.profesores">
+                    <th>{{profesor.nombre}}</th>
+                    <th>{{profesor.edad}}</th>
+                    <th>{{profesor.clase}}</th>
+                </tr>
+            </table>
+
+
+            <ul>
+                <li ng-repeat="numero in [1,2,3,4,5,6,7,8]">
+                    {{numero * (numero + numero)}}
+                </li>
+            </ul>
+
             {{listado | json }}
 
 
