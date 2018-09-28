@@ -26,7 +26,11 @@
             <h4>Manejando repeticiones</h4>
             <hr>
 
-            
+            <ul>
+                <li ng-repeat="nombre in listado">{{nombre}}</li>
+            </ul>
+
+            {{listado | json }}
 
 
         </div><!-- fin del listadoCtrl -->
